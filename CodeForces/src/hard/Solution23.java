@@ -4,22 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class ListNode {
-	int val;
-	ListNode next;
-
-	ListNode() {
-	}
-
-	ListNode(int val) {
-		this.val = val;
-	}
-
-	ListNode(int val, ListNode next) {
-		this.val = val;
-		this.next = next;
-	}
-}
+import util.ListNode;
 
 public class Solution23 {
 	public static void main(String[] args) {
