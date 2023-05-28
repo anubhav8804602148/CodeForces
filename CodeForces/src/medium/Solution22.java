@@ -4,10 +4,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Solution {
+public class Solution22 {
 	
 	public static void main(String[] args) {
-		System.out.println(new Solution().generateParenthesis(3));;
+		System.out.println(new Solution22().generateParenthesis(3));;
 	}
 	
 	public List<String> generateParenthesis(int n) {
