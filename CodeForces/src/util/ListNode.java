@@ -31,7 +31,14 @@ public class ListNode {
 		return prev;
 	}
 
-
+	public int size() {
+		int size = 1;
+		for(ListNode temp=this.next;temp!=this && temp!=null;temp=temp.next) {
+			size++;
+		}
+		return size;
+	}
+	
 	public ListNode reverse() {
 		ListNode head = new ListNode(val, next);
 		ListNode curr = head;
@@ -52,7 +59,8 @@ public class ListNode {
 		while(temp!=null) {
 			buffer.append(","+temp.val);
 			temp = temp.next;
+			if(temp==next) break;
 		}
-		System.out.println(buffer.toString());
+		System.out.println(buffer.toString().substring(0,buffer.lastIndexOf(",")));
 	}
 }
