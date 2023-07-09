@@ -20,11 +20,9 @@ public class AlternateRemoval {
 	}
 	
 	public static void main(String[] args) {
-		int val=1;
-		for(int i=1;i<=5000;i++) {
-			System.out.println(i+"\t"+val);
-			if(val==i) val=1;
-			else val +=2;
+		for(int i=1;i<=2000;i++) {
+			assert new AlternateRemoval().lastNumber(i)==(int)(
+					1+2*(i-Math.pow(2,Math.floor(Math.log(i)/Math.log(2)))));
 		}
 	}
 }
